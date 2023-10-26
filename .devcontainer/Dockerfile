@@ -10,3 +10,9 @@ RUN apt update -y && apt install -y htop
 
 # On top of this build, we install `zsh`, `git` and `docker` as additional
 # Docker layers.
+RUN apt-get -y update
+RUN mkdir -p /usr/share/man/man1/
+RUN apt-get install -y openjdk-8-jdk
+RUN apt-get install -y openjdk-8-jre
+RUN update-alternatives --config java
+RUN update-alternatives --config javac

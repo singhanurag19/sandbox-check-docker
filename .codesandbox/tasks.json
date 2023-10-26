@@ -8,6 +8,12 @@
       "name": "whereis htop",
       "command": "whereis htop",
       "runAtStart": true
+    },
+    "": {
+      "name": "whereis htop",
+      "command": "whereis htop",
+      "runAtStart": true
     }
+
   }
 }
